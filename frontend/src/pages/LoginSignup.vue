@@ -25,7 +25,7 @@
                 {{
                   !isLogin
                     ? params.get("t")
-                      ? "Powered by Frappe Drive."
+                      ? "Powered by GARP Drive."
                       : "Welcome to Drive."
                     : "Welcome back!"
                 }}
