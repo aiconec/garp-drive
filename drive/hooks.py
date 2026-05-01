@@ -16,8 +16,8 @@ website_route_rules = [
 add_to_apps_screen = [
     {
         "name": "drive",
-        "logo": "/assets/drive/frontend/favicon-310x310.png",
-        "title": "Drive",
+        "logo": "/assets/drive/images/garp-drive-icon.svg",
+        "title": "GARP Drive",
         "route": "/drive",
         "has_permission": "drive.api.product.access_app",
     }
