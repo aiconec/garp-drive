@@ -2,6 +2,7 @@ from . import __version__ as app_version
 
 app_name = "drive"
 app_title = "GARP Drive"
+app_icon_title = "Drive"
 app_publisher = "AICONEC"
 app_description = "An easy to use, document sharing and management solution."
 app_icon = "octicon octicon-file-directory"
