@@ -17,7 +17,7 @@ add_to_apps_screen = [
     {
         "name": "drive",
         "logo": "/assets/drive/images/garp-drive-icon.svg",
-        "title": "GARP Drive",
+        "title": "Drive",
         "route": "/drive",
         "has_permission": "drive.api.product.access_app",
     }
