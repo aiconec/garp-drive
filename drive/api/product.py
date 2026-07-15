@@ -3,12 +3,20 @@ from frappe import _
 from frappe.rate_limiter import rate_limit
 from frappe.translate import get_all_translations
 from frappe.utils import escape_html, split_emails, validate_email_address
+from frappe.utils.user import is_website_user
 
 from drive.api.permissions import get_teams, is_admin
 from drive.utils import default_team
 
 
 def access_app():
+    if frappe.session.user == "Administrator":
+        return True
+    if is_website_user():
+        return False
+    # Hide the app tile when its module is blocked for the user (e.g. via Module Profile)
+    if "Drive" in frappe.get_cached_doc("User", frappe.session.user).get_blocked_modules():
+        return False
     return True
 
 
