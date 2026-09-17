@@ -67,9 +67,9 @@
         <Button
           class="hidden md:block"
           variant="solid"
-          label="Try out Drive"
+          label="Try GARP"
           @click="
-            open('https://frappecloud.com/dashboard/signup?product=drive')
+            open('https://garp.aiconec.com/signup')
           "
         />
       </template>

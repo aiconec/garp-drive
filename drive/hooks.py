@@ -1,9 +1,9 @@
 from . import __version__ as app_version
 
 app_name = "drive"
-app_title = "Frappe Drive"
+app_title = "GARP Drive"
 app_publisher = "Frappe Technologies Pvt. Ltd."
-app_description = "An easy to use, document sharing and management solution."
+app_description = "Document storage and sharing in GARP."
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "developers@frappe.io"
@@ -17,7 +17,7 @@ add_to_apps_screen = [
     {
         "name": "drive",
         "logo": "/assets/drive/frontend/favicon-310x310.png",
-        "title": "Drive",
+        "title": "GARP Drive",
         "route": "/drive",
         "has_permission": "drive.api.product.access_app",
     }

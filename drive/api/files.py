@@ -781,7 +781,7 @@ def search(query: str):
             r["file_type"] = get_file_type(r)
         return result
     except Exception as e:
-        frappe.log_error(frappe.get_traceback(), "Frappe Drive Search Error")
+        frappe.log_error(frappe.get_traceback(), "GARP Drive Search Error")
         return {"error": str(e)}
 
 

@@ -30,7 +30,7 @@ class DriveUserInvitation(Document):
                         "doctype": "Drive Notification",
                         "to_user": admin,
                         "type": "Team",
-                        "message": f"A person ({self.email}) from your domain has joined Frappe Drive",
+                        "message": f"A person ({self.email}) from your domain has joined GARP Drive",
                     }
                 ).insert(ignore_permissions=True)
             frappe.db.commit()
@@ -38,7 +38,7 @@ class DriveUserInvitation(Document):
     def invite_via_email(self):
         frappe.sendmail(
             recipients=self.email,
-            subject=f"Frappe Drive - Invitation",
+            subject=f"GARP Drive - Invitation",
             template="drive_invitation",
             args={
                 "invite_link": frappe.utils.get_url(f"/api/method/drive.api.product.accept_invite?key={self.name}"),

@@ -16,7 +16,7 @@ def get_context():
     context.csrf_token = csrf_token
     context.site_name = frappe.local.site
 
-    context.title = "Frappe Drive"
+    context.title = "GARP Drive"
     context.description = "Visit Drive online."
 
     if not frappe.form_dict.app_path:

@@ -25,8 +25,8 @@
                 {{
                   !isLogin
                     ? params.get("t")
-                      ? "Powered by Frappe Drive."
-                      : "Welcome to Drive."
+                      ? "Powered by GARP Drive."
+                      : "Welcome to GARP Drive."
                     : "Welcome back!"
                 }}
               </p>
@@ -71,7 +71,7 @@
                     I accept the
                     <a
                       class="!text-ink-gray-7"
-                      href="https://frappecloud.com/policies"
+                      href="https://aiconec.com"
                       target="_blank"
                     >
                       Terms and Policies
