@@ -146,7 +146,7 @@ def send_share_email(to, message, link, team, type_):
     try:
         frappe.sendmail(
             recipients=to,
-            subject=f"Frappe Drive - {type_.capitalize()} Shared",
+            subject=f"GARP Drive - {type_.capitalize()} Shared",
             template="drive_share",
             args={
                 "message": message,

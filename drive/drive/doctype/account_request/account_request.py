@@ -36,7 +36,7 @@ class AccountRequest(Document):
     def send_otp(self):
         frappe.sendmail(
             recipients=self.email,
-            subject="Frappe Drive - OTP",
+            subject="GARP Drive - OTP",
             template="otp",
             args={"otp": self.otp},
             now=True,

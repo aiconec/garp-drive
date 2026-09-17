@@ -40,7 +40,7 @@ class DriveComment(Document):
             )
             frappe.sendmail(
                 recipients=[mention],
-                subject=f"Frappe Drive - Comment in {doc.title}",
+                subject=f"GARP Drive - Comment in {doc.title}",
                 template="drive_comment",
                 args={
                     "message": f'{from_owner} mentioned you in a comment.',

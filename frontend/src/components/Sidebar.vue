@@ -147,7 +147,7 @@ const settingsItems = computed(() => [
       {
         icon: LucideBook,
         label: __("Documentation"),
-        onClick: () => window.open("https://docs.frappe.io/drive", "_blank"),
+        onClick: () => window.open("https://garp.aiconec.com/docs/modules/drive", "_blank"),
       },
       {
         icon: LucideBadgeHelp,
