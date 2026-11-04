@@ -146,7 +146,7 @@ const settingsItems = computed(() => [
       {
         icon: LucideBook,
         label: __("Documentation"),
-        onClick: () => window.open("https://garp.aiconec.com/docs/modules/drive", "_blank"),
+        onClick: () => window.open("https://bizconnect.id/docs/modules/drive", "_blank"),
       },
       {
         icon: LucideBadgeHelp,

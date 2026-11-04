@@ -69,7 +69,7 @@
           variant="solid"
           label="Try GARP"
           @click="
-            open('https://garp.aiconec.com/signup')
+            open('https://bizconnect.id/signup')
           "
         />
       </template>
