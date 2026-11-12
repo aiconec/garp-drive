@@ -466,12 +466,10 @@ def disk_settings(**kwargs):
     settings.save()
 
 
-WHITELISTED_DOMAINS = [
-    "https://gameplan.frappe.cloud",
-    "https://frappecloud.com",
-    "https://frappe.io",
-    "https://cloud.frappe.io",
-]
+# Origins that may frame Drive and the API responses of a site that has Drive
+# installed. Upstream lists Frappe's own products here; this build is not
+# embedded by any of them, so only the site itself may frame it.
+WHITELISTED_DOMAINS = []
 
 
 def after_request(request):
