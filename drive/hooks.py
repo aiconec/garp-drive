@@ -3,12 +3,13 @@ from frappe.model import base_document
 
 
 app_name = "drive"
-app_title = "Frappe Drive"
-app_publisher = "Frappe Technologies Pvt. Ltd."
+app_title = "GARP Drive"
+app_icon_title = "Drive"
+app_publisher = "AICONEC"
 app_description = "An easy to use, document sharing and management solution."
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
-app_email = "developers@frappe.io"
+app_email = "support@aiconec.com"
 app_license = "GNU Affero General Public License v3.0"
 
 website_route_rules = [
@@ -18,7 +19,7 @@ website_route_rules = [
 add_to_apps_screen = [
     {
         "name": "drive",
-        "logo": "/assets/drive/frontend/favicon-310x310.png",
+        "logo": "/assets/drive/images/garp-drive-icon.svg",
         "title": "Drive",
         "route": "/drive",
         "has_permission": "drive.api.product.access_app",
